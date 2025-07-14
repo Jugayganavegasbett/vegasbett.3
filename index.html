@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VegasBett - Bono de Bienvenida</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1940802446747600');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1940802446747600&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #1c0033, #3b0066);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    img.logo {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    a.btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #25D366;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s;
+      margin: 10px 0;
+    }
+
+    a.btn:hover {
+      background-color: #1ebe5d;
+    }
+
+    a.secondary-btn {
+      background-color: #FFD700;
+      color: #000;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="VegasBett" class="logo" />
+    <h1>Obtené tu bono de bienvenida del 35%</h1>
+
+    <a href="https://wa.me/5492235990553?text=Quiero%20mi%20bono%20de%2035%%20de%20VegasBett" class="btn"
+       onclick='fbq("trackCustom", "ClickFicha");'>
+       Quiero mi bono
+    </a>
+
+    <a href="https://wa.me/5492235931148?text=Hola,%20ya%20hice%20mi%20carga%20y%20quiero%20mi%20bono" class="btn secondary-btn"
+       onclick='fbq("trackCustom", "YaCargo");'>
+       Ya hice mi carga
+    </a>
+
+    <footer>
+      <p>✅ Verificado por WhatsApp</p>
+      <p>© Todos los derechos reservados - Sparkpublicidades</p>
+    </footer>
+  </div>
+</body>
+</html>

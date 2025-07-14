@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VegasBett - Bono de Bienvenida</title>
+  <title>VegasBett - Bono del 35%</title>
 
-  <!-- Meta Pixel Code -->
+  <!-- Pixel Meta -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,7 +22,6 @@
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1940802446747600&ev=PageView&noscript=1"/>
   </noscript>
-  <!-- End Meta Pixel Code -->
 
   <style>
     body {
@@ -79,19 +77,43 @@
       color: #ccc;
     }
   </style>
+
+  <!-- Script de registro en Google Sheets -->
+  <script>
+    function registrarEvento(tipoEvento) {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyNQW2E5rWZp4aI7L10o8udVh4rGUpNEAMcaYDaoES8VfXQ0BTmPPjNs4xZkX_hBsPe/exec';
+
+      const data = {
+        evento: tipoEvento,
+        url: window.location.href,
+        id: Math.random().toString(36).substring(2, 12),
+        numero: tipoEvento === 'YaCargo' ? '2235931148' : '2235990553'
+      };
+
+      fetch(scriptURL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+    }
+  </script>
 </head>
+
 <body>
   <div class="container">
     <img src="logo.png" alt="VegasBett" class="logo" />
     <h1>Obtené tu bono de bienvenida del 35%</h1>
 
-    <a href="https://wa.me/5492235990553?text=Quiero%20mi%20bono%20de%2035%%20de%20VegasBett" class="btn"
-       onclick='fbq("trackCustom", "ClickFicha");'>
+    <a href="https://wa.me/5492235990553?text=Quiero%20mi%20bono" class="btn"
+       onclick='fbq("trackCustom", "ClickFicha"); registrarEvento("ClickFicha");'>
        Quiero mi bono
     </a>
 
     <a href="https://wa.me/5492235931148?text=Hola,%20ya%20hice%20mi%20carga%20y%20quiero%20mi%20bono" class="btn secondary-btn"
-       onclick='fbq("trackCustom", "YaCargo");'>
+       onclick='fbq("trackCustom", "YaCargo"); registrarEvento("YaCargo");'>
        Ya hice mi carga
     </a>
 

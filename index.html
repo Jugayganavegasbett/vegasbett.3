@@ -59,16 +59,11 @@
       text-decoration: none;
       border-radius: 30px;
       transition: background-color 0.3s;
-      margin: 10px 0;
+      margin: 20px 0;
     }
 
     a.btn:hover {
       background-color: #1ebe5d;
-    }
-
-    a.secondary-btn {
-      background-color: #FFD700;
-      color: #000;
     }
 
     footer {
@@ -87,7 +82,7 @@
         evento: tipoEvento,
         url: window.location.href,
         id: Math.random().toString(36).substring(2, 12),
-        numero: tipoEvento === 'YaCargo' ? '2235990553' : '2235990553'
+        numero: '2235990553'
       };
 
       fetch(scriptURL, {
@@ -112,26 +107,22 @@
        Quiero mi bono
     </a>
 
-    <a href="https://wa.me/5492235990553?text=Hola,%20ya%20hice%20mi%20carga%20y%20quiero%20mi%20bono" class="btn secondary-btn"
-       onclick='fbq("trackCustom", "YaCargo"); registrarEvento("YaCargo");'>
-       Ya hice mi carga
-    </a>
-<div style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; text-align: center; max-width: 800px; margin: auto;">
-  <h3 style="color: #333; font-size: 20px; margin-bottom: 8px;">
-    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Candado" style="height: 20px; vertical-align: middle; margin-right: 8px;"/>
-    Pagá fácil, seguro y sin complicaciones
-  </h3>
-  <p style="font-size: 14px; color: #555; margin-bottom: 16px;">Somos una empresa verificada, tu carga es 100% segura. Usá tu método favorito sin miedo a estafas.</p>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <img src="./logo visa.jpg" alt="Visa" style="height: 50px;"/>
-    <img src="./logo master.png" alt="Mastercard" style="height: 50px;"/>
-    <img src="./logo mercado pago.png" alt="Mercado Pago" style="height: 50px;"/>
-    <img src="./logo cuenta dni.png" alt="Cuenta DNI" style="height: 50px;"/>
-    <img src="./logo Brubank.png" alt="Brubank" style="height: 50px;"/>
-    <img src="./logo uala.png" alt="Ualá" style="height: 50px;"/>
-  </div>
-  <p style="font-size: 14px; color: #555; margin-top: 20px;">Podés cargar con cualquier tarjeta o billetera virtual.</p>
-</div>
+    <div style="background-color: #f9f9f9; padding: 20px; border-radius: 12px; text-align: center; max-width: 800px; margin: auto;">
+      <h3 style="color: #333; font-size: 20px; margin-bottom: 8px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Candado" style="height: 20px; vertical-align: middle; margin-right: 8px;"/>
+        Pagá fácil, seguro y sin complicaciones
+      </h3>
+      <p style="font-size: 14px; color: #555; margin-bottom: 16px;">Somos una empresa verificada, tu carga es 100% segura. Usá tu método favorito sin miedo a estafas.</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <img src="./logo visa.jpg" alt="Visa" style="height: 50px;"/>
+        <img src="./logo master.png" alt="Mastercard" style="height: 50px;"/>
+        <img src="./logo mercado pago.png" alt="Mercado Pago" style="height: 50px;"/>
+        <img src="./logo cuenta dni.png" alt="Cuenta DNI" style="height: 50px;"/>
+        <img src="./logo Brubank.png" alt="Brubank" style="height: 50px;"/>
+        <img src="./logo uala.png" alt="Ualá" style="height: 50px;"/>
+      </div>
+      <p style="font-size: 14px; color: #555; margin-top: 20px;">Podés cargar con cualquier tarjeta o billetera virtual.</p>
+    </div>
 
     <footer>
       <p>✅ Verificado por WhatsApp</p>
@@ -140,3 +131,4 @@
   </div>
 </body>
 </html>
+
